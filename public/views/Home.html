@@ -1,0 +1,16 @@
+<div ng-controller="HomeController as vm">
+	<h1>{{vm.title}}</h1>
+	<input ng-model="vm.name" type="text" placeholder="Name" />
+	<input ng-model="vm.age" type="text" placeholder="Age"/>
+	<input ng-model="vm.color" type="text" placeholder="Color"/>
+	<button class="btn btn-lg btn-info" ng-click="vm.createCat(vm.name, vm.age, vm.color)">Create a Cat!</button>
+
+	<br/>
+	<input ng-model="vm.named" type="text" placeholder="Name" />
+	<input ng-model="vm.type" type="text" placeholder="Type"/>
+	<input ng-model="vm.yumminess" type="number" placeholder="0"/>
+	<button class="btn btn-lg btn-info" ng-click="vm.createDish(vm.named, vm.type, vm.yumminess)">Create a Food Dish!</button>
+	
+	<button class="btn btn-lg btn-info" ng-click="vm.createDog()">Create a Dog!</button>
+
+</div>
